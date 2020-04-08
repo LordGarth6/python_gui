@@ -1,0 +1,34 @@
+Getting the data:
+Make new folder for the site if it doesn't exist in,
+"N:\Internal Departments\Technical Support\French FGT site temperature info\1. Instructions\"
+
+Get these files from the filter PC.
+- Details.log  -  this goes in main sites folder and is located in the sites Report folder
+- FGT_data.log  -  this goes in the sites data folder and is located in the sites Report folder
+- FGT Param_Record.log  -  this goes in the sites parameter folder and is located in the sites FTL folder
+- Screen shot the current parameter page  -  this goes in the sites parameter folder
+
+Folders with " - required" tag needs the data from site
+
+Folders with no tag needs the data tools running
+
+Folders with " - completed" are done
+
+
+Manipulating the data:
+
+Parameters:
+	Copy accross the parameters log file in the parameters folder.
+	Open the convert_log_to_csv batch script, this should convert the parameter log file to CSV file for ease of use.
+	Open the new FGT_Param_Record.csv file and the FGT_Params_Graphed file.
+	In the FGT_Param_Record.csv file, press cntl + shift + end, then press cntl + shift + home.
+	Copy the newly highlighed data FGT_Param_Record Graphed file in the DataDump page.
+	Ensure you have enabled the used of macros in this file. (Usually a banner shows up asking to enbale it.)
+	Press the GO! button.
+	Save and exit.
+
+Data:
+	Copy accross the data log file in the data folder.
+	Copy the python script "Data_comb" to the data folder under the relevent site name.
+	Open up script.
+	Tell it the number of coolers required, 1 2 or 3.
